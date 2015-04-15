@@ -1,7 +1,7 @@
 <?php
 $db_config = array(
-  'source' => array( 'host' => 'localhost', 'username' => 'root', 'password' => 'root', 'dbname' => 'yurtest_ft' ),
-  'target' => array( 'host' => 'localhost', 'username' => 'root', 'password' => 'root', 'dbname' => 'ftuatcom_aht' ),
+  'source' => array( 'host' => 'localhost', 'username' => 'root', 'password' => 'root', 'dbname' => 'source_db' ),
+  'target' => array( 'host' => 'localhost', 'username' => 'root', 'password' => 'root', 'dbname' => 'target_db' ),
   );
 
 try {
