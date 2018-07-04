@@ -1,13 +1,18 @@
-SEARCH FILE IN MAC:
+# SEARCH FILE IN MAC:
+```bash
 find ~ -iname \*resume\*
 find / -iname \*NetBeans\*
+```
+# REMOVE FILE OR FOLDER
 
-REMOVE FILE OR FOLDER
-
+```bash
 rm -rf file|folder (path to file or folder)
+```
 
 example:
+```bash
 rm org.netbeans.ide.*
+```
 
 # edit host file, type command bellow and hit enter, then type password, update and Ctrl+O to save
 ```bash
