@@ -10,7 +10,9 @@ example:
 rm org.netbeans.ide.*
 
 # edit host file, type command bellow and hit enter, then type password, update and Ctrl+O to save
-`sudo nano /private/etc/hosts`
+```bash
+sudo nano /private/etc/hosts
+```
 
 # Generate ssh key in mac
 <a href="https://drupal.org/node/1070130" target="_blank">Detail</a>
