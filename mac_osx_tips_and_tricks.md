@@ -13,9 +13,12 @@ rm org.netbeans.ide.*
 sudo nano /private/etc/hosts
 
 # Generate ssh key in mac
+<a href="https://drupal.org/node/1070130" target="_blank">Detail</a>
 
-https://drupal.org/node/1070130
-
+```bash
+$ pbcopy < ~/.ssh/id_rsa.pub
+$ pbpaste > ~/clipboard.text
+```
 # REMOVE Start up Programes
 
 `/Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist`
