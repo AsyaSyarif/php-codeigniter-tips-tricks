@@ -74,8 +74,8 @@ $actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP
 
 **CodeIgniter plugin for Sublime Text**
 ========
-https://sublime.wbond.net/packages/CodeIgniter%20Snippets
-http://stackoverflow.com/questions/16235706/sublime-3-set-key-map-for-function-goto-definition
+<a href="https://sublime.wbond.net/packages/CodeIgniter%20Snippets" target="_blank">Snippets</a>
+<a href="http://stackoverflow.com/questions/16235706/sublime-3-set-key-map-for-function-goto-definition">Key map for Sublime</a>
 =========
 
 
