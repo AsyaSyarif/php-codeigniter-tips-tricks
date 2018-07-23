@@ -23,6 +23,55 @@ CI get data by get_where
 ```php
     $tab_detail = $CI->db->get_where('table_name', array('id' => $_id), 1)->row();
 ```
+
+### Load config in CI
+```php
+$CI->config->load('email');
+var_dump($CI->config->item('fix_spam_box'));
+var_dump($CI->config->item('xxx_fix_spam_box'));
+
+if ( $CI->config->item('fix_spam_box') === TRUE) {
+}
+```
+### Convert Image
+```php
+$im   = imagecreatefromjpeg( 'pic.jpg' );
+ imageinterlace( $im , 1);  // or true
+imagejpeg( $im ,  './php_interlaced.jpg' , 100);
+ imagedestroy( $im );
+ ```
+### Load module model
+```php
+$CI->load->module_model('administrator.jobs.job_info_model');
+$job->container_type = $CI->job_info_model->get_job_info($job->job_id, 'container_type');
+```
+### trick for css
+```css
+min-height: calc(100vh - 200px)
+```
+
+### CHECK DATABASE RECORD EXISTS
+```sql
+SELECT * FROM jobs j
+WHERE NOT EXISTS (
+  SELECT 'x' FROM legs _l WHERE _l.`job_id` = j.`job_id`
+)
+ORDER BY job_id;
+```
+### Check if user use iphone
+```javascript
+var iOS = ( navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false );
+```
+### FT log message
+```php
+log_message('error', 'Client: ' . $_SERVER['SERVER_NAME'] . ' does not have wait_unpack & drop_swap info value!');
+```
+### check actual link
+```php
+$actual_link = (isset($_SERVER['HTTPS']) ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+```
+
+
 **CodeIgniter plugin for Sublime Text**
 ========
 https://sublime.wbond.net/packages/CodeIgniter%20Snippets
