@@ -34,3 +34,6 @@ $ pbpaste > ~/clipboard.text
 ### To Turn It back on
 
 `launchctl load -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist`
+
+### MAMP PRO MYSQL DATABASE FOLDER
+`/Library/Application Support/appsolute/MAMP PRO/db/mysql56/`
